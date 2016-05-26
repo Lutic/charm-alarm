@@ -31,7 +31,7 @@ app.run(['$rootScope', function($rootScope) {
 // Social buttons directive
 app.directive('socialButtons', function(){
   return {
-    ristrict: 'E',
+    restrict: 'E',
     templateUrl: '../templates/social_buttons.html'
   }
 });
