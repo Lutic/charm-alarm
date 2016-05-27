@@ -17,6 +17,5 @@ To launch local server you can use node.js and node manager package (nmp).
 
 **Then, project will be available on:**
   ```
-  http://192.168.0.86:8080
   http://127.0.0.1:8080
   ```
