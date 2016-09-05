@@ -5,6 +5,12 @@
   <title ng-bind="title">{{$rootScope.title}}</title>
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  <!-- Material Design Lite Library (https://getmdl.io/index.html) -->
+  <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
+  <script src="/bower_components/material-design-lite/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <link rel="stylesheet" href="style/main.css">
 
   <script src="bower_components/angular/angular.min.js"></script>
@@ -14,6 +20,9 @@
 
 </head>
 <body>
+
+
+<paper-button>Say Hello</paper-button>
 
 <a href="#/"><button>Main</button></a>
 <a href="#/test"><button>Test</button></a>

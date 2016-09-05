@@ -1,4 +1,14 @@
-body {
-  font: normal 14px/24px 'Roboto', sans-serif;
-  color: #333;
+header {
+  display: block;
+  background-color: #02a8f3;
+  height: 150px;
+}
+.container {
+  margin: 0 auto;
+}
+.container--big {
+  max-width: 980px;
+}
+.container--small {
+  max-width: 720px;
 }

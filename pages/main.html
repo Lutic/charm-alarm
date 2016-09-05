@@ -1,6 +1,15 @@
-<div ng-repeat="test in main.tests" ng-click="main.testChoice(test.id)">
-  {{test.id}}
-  {{test.title}}
+<header class="mdl-shadow--2dp">
+  <div class="container container--big">
+    ШАРМ АЛАРМ
+  </div>
+</header>
+<div class="container container--big">
+  <div class="mdl-grid">
+    <div ng-repeat="test in main.tests" ng-click="main.testChoice(test.id)" class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+      {{test.id}}
+      {{test.title}}
+    </div>
+  </div>
 </div>
 
 <social-buttons></social-buttons>
