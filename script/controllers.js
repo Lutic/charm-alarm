@@ -1,18 +1,33 @@
 var currentTest;
 
-app.controller('Main', function() {
-  this.tests = tests;
-  this.testChoice = function(a) {
-    currentTest = a;
+app.controller('Main', function () {
+
+  var self = this;
+  self.tests = tests;
+
+  self.testChoice = function (id, status) {
+    if (status === 'open') {
+      currentTest = id;
+    } else {
+      currentTest = null;
+    }
     console.log(currentTest);
+    self.isCurrentTest(id);
     return currentTest;
-  }
+  };
+
+  self.isCurrentTest = function (id) {
+    return currentTest === id;
+  };
+
 });
-app.controller('Test', function() {
+
+app.controller('Test', function () {
   this.currentTest = currentTest;
   this.tests = tests;
 });
-app.controller('Help', function() {
+
+app.controller('Help', function () {
   this.helpCenters = helpCenters;
 });
 
@@ -43,20 +58,26 @@ var tests = [
   {
     id: 0,
     title: 'Насколько крут твой парень?!',
-    description: '',
+    img: 'img/bg_test1.jpg',
+    description: 'Хочешь узнать, повезло ли тебе с бойфрендом, или ты достойна большего? Наш тест даст ответ на эти вопросы, а после прохождения ты получишь парочку полезных советов.'
   },
   {
     id: 1,
     title: 'Работа твоей мечты! Слишком хорошо, чтобы быть правдой?',
-    description: '',
+    img: 'img/bg_test2.jpg',
+    description: ''
   },
   {
     id: 2,
-    title: 'Крепки ли Ваши отношения?'
+    title: 'Крепки ли Ваши отношения?',
+    img: 'img/bg_test3.jpg',
+    description: ''
   },
   {
     id: 3,
-    title: 'Насколько тебя принимают сверстники?'
+    title: 'Насколько тебя принимают сверстники?',
+    img: 'img/bg_test4.jpg',
+    description: ''
   }
 ];
 

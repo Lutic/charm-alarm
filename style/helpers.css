@@ -1,0 +1,19 @@
+.flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-justify {
+  justify-content: space-between;
+}
+.flex-vertical-center {
+  align-items: center;
+}
+.text-right {
+  text-align: right;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.pointer {
+  cursor: pointer;
+}
