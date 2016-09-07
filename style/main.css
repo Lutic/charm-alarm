@@ -8,6 +8,9 @@
 .flex-vertical-center {
   align-items: center;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .text-right {
   text-align: right;
 }
@@ -46,6 +49,15 @@ header {
   background-color: #ff5252;
 }
 /* Test cards */
+@media (max-width: 932px) {
+  .cards {
+    justify-content: center !important;
+  }
+}
+.card-wrapper {
+  flex-basis: 466px;
+  min-width: 466px;
+}
 .card {
   position: relative;
 }
