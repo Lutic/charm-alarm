@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title ng-bind="title">{{$rootScope.title}}</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
   <!-- Rotating cards -->
@@ -11,24 +13,24 @@
 
   <!-- Material Design Lite Library (https://getmdl.io/index.html) -->
   <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
-  <script src="/bower_components/material-design-lite/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <link rel="stylesheet" href="style/main.css">
 
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/material-design-lite/material.min.js"></script>
+  <script src="bower_components/angular-material-design-lite/src/angular-material-design-lite.js"></script>
   <script src="script/app.js"></script>
   <script src="script/controllers.js"></script>
+
 
 </head>
 <body>
 
-<a href="#/"><button>Main</button></a>
-<a href="#/test"><button>Test</button></a>
-<a href="#/help"><button>Help</button></a>
-
 <div ng-view=""></div>
+<a href="" class="vk mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">vk</a>
+<a href="" class="fb mdl-button mdl-js-button mdl-js-ripple-effect">fb</a>
 
 </body>
 </html>

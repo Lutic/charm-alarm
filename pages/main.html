@@ -1,9 +1,12 @@
 <header class="mdl-shadow--2dp">
   <div class="container container--big">
     ШАРМ АЛАРМ
+    <a href="#/help" class="text-uppercase pull-right">Помощь</a>
   </div>
 </header>
-<div class="container container--big">
+<div class="container container--big main">
+  <p class="text-center">Ищешь совета об отношениях, работе или просто поведении в разных жизненных ситуациях?<br>
+    Пройди наши тесты, и получи полезную информацию, которая пригодится тебе в жизни.</p>
   <div class="cards flex flex-justify flex-wrap">
     <div ng-repeat="test in main.tests" class="card-wrapper">
 
@@ -12,7 +15,7 @@
           <div class="front" ng-click="main.testChoice(test.id, 'open')">
             <img src="{{test.img}}" alt="{{test.title}}">
             <div class="card__title">
-              <span>{{test.id}} {{test.title}}</span>
+              <span>{{test.title}}</span>
               <i class="material-icons">navigate_next</i>
             </div>
           </div> <!-- end front panel -->
@@ -23,11 +26,11 @@
             <p>{{test.description}}</p>
             <div class="text-right">
               <!-- Accent-colored raised button with ripple -->
-              <button class="mr-10 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              <a href="#/test" class="mr-10 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                 Пройти тест
-              </button>
+              </a>
               <!-- Icon button -->
-              <button class="mdl-button mdl-js-button mdl-button--icon">
+              <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
                 <i class="material-icons">share</i>
               </button>
             </div>
