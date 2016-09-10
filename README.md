@@ -1,6 +1,6 @@
 # CHARM ALARM
 
-This website is included tests and advices for teenage girls.
+This website is included tests and pieces of advice for teenage girls.
 Based on **Angular** and **Material Design**.
 
 To launch local server you can use node.js and node manager package (nmp).
