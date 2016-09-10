@@ -5,6 +5,9 @@
 .flex-justify {
   justify-content: space-between;
 }
+.flex-end {
+  justify-content: flex-end;
+}
 .flex-vertical-center {
   align-items: center;
 }
@@ -23,6 +26,9 @@
 .pull-right {
   float: right;
 }
+.pull-left {
+  float: left;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -39,8 +45,24 @@ body {
   color: #333;
   background-color: #fff;
 }
+body .help {
+  background-color: #02a8f3;
+}
 p {
   font-size: 16px;
+}
+a {
+  font-size: 16px;
+  color: #ff5252;
+}
+.container {
+  margin: 0 auto;
+}
+.container--big {
+  max-width: 980px;
+}
+.container--small {
+  max-width: 720px;
 }
 header {
   display: block;
@@ -56,14 +78,13 @@ header a {
 header a:hover {
   text-decoration: underline;
 }
-.container {
-  margin: 0 auto;
+header p {
+  font-weight: 300;
+  color: #fff;
 }
-.container--big {
-  max-width: 980px;
-}
-.container--small {
-  max-width: 720px;
+.logo {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .main {
   padding: 50px 0 60px;
@@ -113,6 +134,41 @@ header a:hover {
   height: auto;
   min-height: 247px;
 }
+.front {
+  cursor: pointer;
+}
 .back {
   padding: 26px;
+}
+/* Social buttons */
+.social {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.social .mdl-button {
+  min-width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: 8px;
+  color: #fff;
+}
+.social .vk {
+  background: #02a8f3 url('../img/vk.png') no-repeat center center;
+}
+.social .fb {
+  background: #02a8f3 url('../img/fb.png') no-repeat center center;
+}
+.social p {
+  margin-bottom: 0;
+}
+.social a {
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+}
+/* Button 'Previous page' */
+a.prev {
+  margin: 16px 0 0 16px;
 }

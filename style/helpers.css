@@ -5,6 +5,9 @@
 .flex-justify {
   justify-content: space-between;
 }
+.flex-end {
+  justify-content: flex-end;
+}
 .flex-vertical-center {
   align-items: center;
 }
@@ -22,6 +25,9 @@
 }
 .pull-right {
   float: right;
+}
+.pull-left {
+  float: left;
 }
 .mr-10 {
   margin-right: 10px;

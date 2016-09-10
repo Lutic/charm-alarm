@@ -18,13 +18,15 @@ app.config(function($routeProvider){
       templateUrl : 'pages/help.html',
       title : 'Помощь',
       controller : 'Help',
-      controllerAs : 'help'
+      controllerAs : 'help',
+      bodyClass: 'help'
     });
 });
 
 app.run(['$rootScope', function($rootScope) {
   $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
     $rootScope.title = current.$$route.title; // Title depending on the controller
+    $rootScope.bodyClass = current.$$route.bodyClass;
   });
 }]);
 

@@ -26,11 +26,9 @@
 
 
 </head>
-<body>
+<body ng-class="{help: $rootScope.bodyClass == 'help'}">
 
 <div ng-view=""></div>
-<a href="" class="vk mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">vk</a>
-<a href="" class="fb mdl-button mdl-js-button mdl-js-ripple-effect">fb</a>
 
 </body>
 </html>

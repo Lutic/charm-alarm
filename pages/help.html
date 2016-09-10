@@ -1,8 +1,14 @@
-<div ng-repeat="helpCenter in help.helpCenters">
-  {{helpCenter.title}}
-  <p>{{helpCenter.description}}</p>
-  <p>{{helpCenter.phone}}</p>
-</div>
+<a href="#/" class="mdl-button mdl-js-button mdl-button--icon prev">
+  <i class="material-icons">arrow_back</i>
+</a>
 
-<social-buttons></social-buttons>
+<div class="container container--big">
+  <div ng-repeat="helpCenter in help.helpCenters">
+    {{helpCenter.title}}
+    <p>{{helpCenter.description}}</p>
+    <p>{{helpCenter.phone}}</p>
+  </div>
+
+  <social-buttons></social-buttons>
+</div>
 
