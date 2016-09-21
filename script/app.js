@@ -12,7 +12,8 @@ app.config(function($routeProvider){
       templateUrl : 'pages/test.html',
       title : 'Tecт',
       controller : 'Test',
-      controllerAs : 'test'
+      controllerAs : 'test',
+      bodyClass: 'test'
     })
     .when('/help',{
       templateUrl : 'pages/help.html',

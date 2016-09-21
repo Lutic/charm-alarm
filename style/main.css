@@ -35,24 +35,48 @@
 .pointer {
   cursor: pointer;
 }
+.border-radius {
+  border-radius: 4px;
+}
+.border-top-radius {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.border-bottom-radius {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
 * {
   box-sizing: border-box;
 }
 body {
   position: relative;
   margin-top: 0;
-  font: normal 14px/24px 'Roboto', sans-serif;
+  font: normal 16px/1.5 'Roboto', sans-serif;
   color: #333;
-  background-color: #fff;
+  background-color: #eee;
 }
-body .help {
+body.help {
   background-color: #02a8f3;
+}
+body.test {
+  background-color: #ffb9b3;
 }
 p {
   font-size: 16px;
 }
+p.phone {
+  font-size: 24px;
+  font-weight: 300;
+}
 a {
   font-size: 16px;
+  color: #ff5252;
+}
+.large {
+  font-size: 1.125em;
+}
+span.accent {
   color: #ff5252;
 }
 .container {
@@ -171,4 +195,38 @@ header p {
 /* Button 'Previous page' */
 a.prev {
   margin: 16px 0 0 16px;
+}
+.panel {
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.panel .panel__title {
+  padding: 20px 25px;
+  background-color: #fafafa;
+  font-size: 20px;
+  font-weight: normal;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.panel .panel__body {
+  padding-bottom: 20px;
+}
+.panel .panel__body p {
+  margin: 0;
+}
+.panel .panel__body .section {
+  padding: 20px 25px;
+}
+.panel .panel__body .section:not(:last-child) {
+  border-bottom: 1px solid #e1e1e1;
+}
+footer {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  border-top: 4px solid #ff5252;
 }

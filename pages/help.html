@@ -3,12 +3,19 @@
 </a>
 
 <div class="container container--big">
-  <div ng-repeat="helpCenter in help.helpCenters">
-    {{helpCenter.title}}
-    <p>{{helpCenter.description}}</p>
-    <p>{{helpCenter.phone}}</p>
+  <div class="panel">
+    <div class="panel__title">Обратись к нам за помощью</div>
+    <div class="panel__body">
+      <div ng-repeat="helpCenter in help.helpCenters" class="section">
+        <span class="accent large">{{helpCenter.title}}</span>
+        <p>{{helpCenter.description}}</p>
+        <p class="phone">{{helpCenter.phone}}</p>
+      </div>
+    </div>
   </div>
 
-  <social-buttons></social-buttons>
+  <footer>
+    <social-buttons></social-buttons>
+  </footer>
 </div>
 
