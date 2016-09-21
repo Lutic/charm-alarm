@@ -61,6 +61,7 @@ body.help {
 }
 body.test {
   background-color: #ffb9b3;
+  background-image: url('../img/symphony.jpg');
 }
 p {
   font-size: 16px;
@@ -112,6 +113,9 @@ header p {
 }
 .main {
   padding: 50px 0 60px;
+}
+.mdl-button {
+  color: #616161;
 }
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
 .mdl-button--accent.mdl-button--accent.mdl-button--fab {
@@ -194,7 +198,8 @@ header p {
 }
 /* Button 'Previous page' */
 a.prev {
-  margin: 16px 0 0 16px;
+  margin: 16px 0 16px 16px;
+  color: #333;
 }
 .panel {
   background-color: #fff;
@@ -212,6 +217,7 @@ a.prev {
   border-top-right-radius: 4px;
 }
 .panel .panel__body {
+  position: relative;
   padding-bottom: 20px;
 }
 .panel .panel__body p {
@@ -223,10 +229,38 @@ a.prev {
 .panel .panel__body .section:not(:last-child) {
   border-bottom: 1px solid #e1e1e1;
 }
+.panel .panel__body .next {
+  position: absolute;
+  right: 35px;
+  top: -30px;
+}
 footer {
   display: block;
   padding: 10px 20px;
   margin-top: 40px;
   background-color: #fff;
   border-top: 4px solid #ff5252;
+}
+.test {
+  min-height: 100vh;
+}
+.test a.prev {
+  color: #fff;
+}
+.test .panel .panel__title {
+  background-color: #ff5252;
+  color: #fff;
+  font-size: 20px;
+}
+.test .panel .mdl-button--fab {
+  background: #f5f5f5;
+}
+.test .panel .section button {
+  margin-left: 20px;
+}
+.test footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 720px;
 }

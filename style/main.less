@@ -17,6 +17,7 @@ body {
   }
   &.test {
     background-color: @color_accent_light;
+    background-image: url('../img/symphony.jpg');
   }
 }
 
@@ -84,6 +85,10 @@ header {
 }
 
 //Buttons
+
+.mdl-button {
+  color: @grey_dim;
+}
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
     background-color: @color_accent;
@@ -178,7 +183,8 @@ header {
 /* Button 'Previous page' */
 
 a.prev {
-  margin: 16px 0 0 16px;
+  margin: 16px 0 16px 16px;
+  color: #333;
 }
 
 .panel {
@@ -194,6 +200,7 @@ a.prev {
     .border-top-radius;
   }
   .panel__body {
+    position: relative;
     padding-bottom: 20px;
 
     p {
@@ -207,6 +214,12 @@ a.prev {
         border-bottom: 1px solid @grey_gainsboro;
       }
     }
+
+    .next {
+      position: absolute;
+      right: 35px;
+      top: -30px;
+    }
   }
 }
 
@@ -216,6 +229,37 @@ footer {
   margin-top: 40px;
   background-color: #fff;
   border-top: 4px solid @color_accent;
+}
+
+.test {
+  min-height: 100vh;
+
+  a.prev {
+    color: #fff;
+  }
+
+  .panel {
+    .panel__title {
+      background-color: @color_accent;
+      color: #fff;
+      font-size: 20px;
+    }
+    .mdl-button--fab {
+      background: #f5f5f5;
+    }
+
+    .section button {
+      margin-left: 20px;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 720px;
+  }
+
 }
 
 

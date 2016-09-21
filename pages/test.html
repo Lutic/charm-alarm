@@ -1,8 +1,28 @@
+<a href="#/" class="mdl-button mdl-js-button mdl-button--icon prev">
+  <i class="material-icons">arrow_back</i>
+</a>
+
 <div class="container container--small">
 
   <div class="panel">
     <div class="panel__title">{{test.tests[test.currentTest].title}}</div>
-    <div class="panel__body"></div>
+    <div class="panel__body">
+
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect next">
+        <i class="material-icons">navigate_next</i>
+      </button>
+
+      <div class="section text-center">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect text-uppercase">
+          нет
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect text-uppercase">
+          да
+        </button>
+      </div>
+
+
+    </div>
   </div>
 
   <footer>
