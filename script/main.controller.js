@@ -26,19 +26,4 @@ app.controller('Main', [ '$http', function ($http) {
 
 }]);
 
-app.controller('Test', function () {
-  this.currentTest = currentTest;
-  this.tests = tests;
-});
-
-app.controller('Help', [ '$http', function ($http) {
-  var help = this;
-  help.helpCenters = [];
-
-  $http.get('/data/help-centers.json').success(function (data) {
-    help.helpCenters = data;
-  });
-
-}]);
-
 
