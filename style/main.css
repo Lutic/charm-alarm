@@ -251,12 +251,17 @@ footer {
   background-color: #ff5252;
   color: #fff;
   font-size: 20px;
+  min-height: 140px;
 }
 .test .panel .mdl-button--fab {
   background: #f5f5f5;
 }
 .test .panel .section button {
   margin-left: 20px;
+  margin-top: 10px;
+}
+.test .panel .result {
+  padding: 20px 25px;
 }
 .test footer {
   position: absolute;

@@ -5,20 +5,23 @@
 <div class="container container--small">
 
   <div class="panel">
-    <div class="panel__title">{{test.tests[test.currentTest].title}}</div>
+    <div class="panel__title" ng-hide="test.isCompleted">{{test.question()}}</div>
     <div class="panel__body">
 
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect next">
+      <div class="result" ng-show="test.isCompleted" ng-bind-html="test.result"></div>
+
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect next" ng-show="test.isSpecialQuestion()"  ng-click="test.testContinue(inputValue)">
         <i class="material-icons">navigate_next</i>
       </button>
 
-      <div class="section text-center">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect text-uppercase">
+      <div class="section text-center" ng-hide="test.isCompleted">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect text-uppercase" ng-hide="test.isSpecialQuestion()" ng-click="test.testContinue('no')">
           нет
         </button>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect text-uppercase">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect text-uppercase" ng-hide="test.isSpecialQuestion()" ng-click="test.testContinue('yes')">
           да
         </button>
+        <input type="text" ng-show="test.isSpecialQuestion()" ng-model="inputValue">
       </div>
 
 
