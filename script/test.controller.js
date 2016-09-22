@@ -38,6 +38,12 @@ app.controller('Test',[ '$http', function ($http) {
     }
 
     self.testContinue = function (answer) {
+
+      /* Special condition for 4th test */
+      if (self.currentTest === 4 && self.currentZone === 'red' && self.currentQuestion === 0 ) {
+        answer === 'yes' ? ( answer = 'no' ) : ( answer = 'yes' );
+      }
+
       answer === 'yes' ? ++self.positiveAnswers : null;
       ++self.currentQuestion;
 
