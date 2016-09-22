@@ -54,7 +54,7 @@ body {
   margin-top: 0;
   font: normal 16px/1.5 'Roboto', sans-serif;
   color: #333;
-  background-color: #eee;
+  background-color: #fff;
 }
 body.help {
   background-color: #02a8f3;
@@ -263,4 +263,9 @@ footer {
   bottom: 0;
   width: 100%;
   max-width: 720px;
+}
+.test footer .help-link {
+  margin-top: 15px;
+  color: #333;
+  text-decoration: none;
 }

@@ -9,8 +9,8 @@ body {
   position: relative;
   margin-top: 0;
   font: normal 16px/1.5 'Roboto', sans-serif;
-  color: #333;
-  background-color: #eee;
+  color: @color-text;
+  background-color: #fff;
 
   &.help {
     background-color: @color_primary;
@@ -258,6 +258,12 @@ footer {
     bottom: 0;
     width: 100%;
     max-width: 720px;
+
+    .help-link {
+      margin-top: 15px;
+      color: @color-text;
+      text-decoration: none;
+    }
   }
 
 }
