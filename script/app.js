@@ -24,6 +24,15 @@ app.config(function($routeProvider){
     });
 });
 
+// Fix bug of angular-material-design-lite.js
+app.run(function ($rootScope,$timeout) {
+  $rootScope.$on('$viewContentLoaded', ()=> {
+    $timeout( () => {
+      componentHandler.upgradeAllRegistered();
+    })
+  })
+});
+
 app.run(['$rootScope', function($rootScope) {
   $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
     $rootScope.title = current.$$route.title; // Title depending on the controller
