@@ -199,7 +199,7 @@ header p {
 /* Button 'Previous page' */
 a.prev {
   margin: 16px 0 16px 16px;
-  color: #333;
+  color: #fff;
 }
 .panel {
   background-color: #fff;
@@ -244,9 +244,6 @@ footer {
 .test {
   min-height: 100vh;
   padding-bottom: 100px;
-}
-.test a.prev {
-  color: #fff;
 }
 .test .panel .panel__title {
   background-color: #ff5252;
