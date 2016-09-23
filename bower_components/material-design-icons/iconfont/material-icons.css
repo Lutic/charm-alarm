@@ -1,26 +1,15 @@
-@color_primary: #02a8f3;
-@color_accent: #ff5252;
-@color_accent_light: #ffb9b3;
-
-@grey_light: #fafafa;
-@grey_gainsboro: #e1e1e1;
-@grey_dim: #616161;
-
-@color-text: #333;
-
-//Material design icons
-
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'),
-  local('MaterialIcons-Regular'),
-  url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-  url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
-  url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');
 }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
