@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../../../../fonts/Roboto/Roboto-BoldItalic.eot');
+  src: local('Roboto BoldItalic'), local('Roboto-BoldItalic'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.woff2') format('woff2'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.woff') format('woff'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.svg#Roboto') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto-BoldItalic';
+  src: url('../../../../../fonts/Roboto/Roboto-BoldItalic.eot');
+  src: local('Roboto BoldItalic'), local('Roboto-BoldItalic'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.woff2') format('woff2'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.woff') format('woff'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype'), url('../../../../../fonts/Roboto/Roboto-BoldItalic.svg#Roboto') format('svg');
+}

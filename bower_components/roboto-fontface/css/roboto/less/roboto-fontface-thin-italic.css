@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../../../../fonts/Roboto/Roboto-ThinItalic.eot');
+  src: local('Roboto ThinItalic'), local('Roboto-ThinItalic'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.woff2') format('woff2'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.woff') format('woff'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.svg#Roboto') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  src: url('../../../../../fonts/Roboto/Roboto-ThinItalic.eot');
+  src: local('Roboto ThinItalic'), local('Roboto-ThinItalic'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.woff2') format('woff2'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.woff') format('woff'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype'), url('../../../../../fonts/Roboto/Roboto-ThinItalic.svg#Roboto') format('svg');
+}
