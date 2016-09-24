@@ -21,7 +21,16 @@
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect text-uppercase" ng-hide="test.isSpecialQuestion()" ng-click="test.testContinue('yes')">
           да
         </button>
-        <input type="text" ng-show="test.isSpecialQuestion()" ng-model="inputValue">
+
+        <!-- Numeric Textfield -->
+        <form action="#" ng-show="test.isSpecialQuestion()">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age" ng-model="inputValue">
+            <label class="mdl-textfield__label" for="age">Укажи свой возраст</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+
       </div>
 
 
