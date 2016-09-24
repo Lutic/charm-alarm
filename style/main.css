@@ -295,6 +295,7 @@ header p {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-size: 22px;
+  font-weight: 300;
   line-height: 1;
 }
 .card__title i {
