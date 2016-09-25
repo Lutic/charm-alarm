@@ -221,6 +221,7 @@ a {
 .large {
   font-size: 1.125em;
 }
+p.accent,
 span.accent {
   color: #ff5252;
 }
@@ -334,12 +335,9 @@ header p {
   background: #02a8f3 url('../img/fb.png') no-repeat center center;
 }
 .social p {
-  margin-bottom: 0;
-}
-.social a {
   font-size: 20px;
   font-weight: 300;
-  text-decoration: none;
+  margin-bottom: 0;
 }
 /* Button 'Previous page' */
 a.prev {
