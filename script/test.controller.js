@@ -1,4 +1,4 @@
-app.controller('Test',[ '$http', function ($http) {
+angular.module('app').controller('Test',[ '$http', function ($http) {
   
   var self = this;
     self.currentTest = currentTest,

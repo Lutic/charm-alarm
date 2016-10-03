@@ -7,7 +7,7 @@
     <div class="panel__title">Обратись к нам за помощью</div>
     <div class="panel__body">
       <div ng-repeat="helpCenter in help.helpCenters" class="section">
-        <span class="accent large">{{helpCenter.title}}</span>
+        <span class="accent large" ng-bind-html="helpCenter.title"></span>
         <p>{{helpCenter.description}}</p>
         <p class="phone">{{helpCenter.phone}}</p>
       </div>

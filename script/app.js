@@ -26,8 +26,8 @@ app.config(function($routeProvider){
 
 // Fix bug of angular-material-design-lite.js
 app.run(function ($rootScope,$timeout) {
-  $rootScope.$on('$viewContentLoaded', ()=> {
-    $timeout( () => {
+  $rootScope.$on('$viewContentLoaded', function () {
+    $timeout( function () {
       componentHandler.upgradeAllRegistered();
     })
   })

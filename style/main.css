@@ -202,10 +202,11 @@ body {
 }
 body.help {
   background-color: #02a8f3;
+  background-image: url('../img/subtle-dots.png');
 }
 body.test {
   background-color: #ffb9b3;
-  background-image: url('../img/symphony.jpg');
+  background-image: url('../img/skulls.png');
 }
 p {
   font-size: 16px;
@@ -218,8 +219,9 @@ a {
   font-size: 16px;
   color: #ff5252;
 }
-.large {
-  font-size: 1.125em;
+.large,
+.large a {
+  font-size: 18px;
 }
 p.accent,
 span.accent {
@@ -231,8 +233,18 @@ span.accent {
 .container--big {
   max-width: 980px;
 }
+@media (max-width: 980px) {
+  .container--big {
+    padding: 0 10px;
+  }
+}
 .container--small {
   max-width: 720px;
+}
+@media (max-width: 720px) {
+  .container--small {
+    padding: 0 10px;
+  }
 }
 header {
   display: block;
@@ -259,6 +271,12 @@ header p {
 .main {
   padding: 50px 0 60px;
 }
+@media (max-width: 980px) {
+  .main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .mdl-button {
   color: #616161;
 }
@@ -267,7 +285,7 @@ header p {
   background-color: #ff5252;
 }
 /* Test cards */
-@media (max-width: 932px) {
+@media (max-width: 931px) {
   .cards {
     justify-content: center !important;
   }
@@ -275,6 +293,12 @@ header p {
 .card-wrapper {
   flex-basis: 466px;
   min-width: 466px;
+}
+@media (max-width: 466px) {
+  .card-wrapper {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
 }
 .card {
   position: relative;
@@ -320,6 +344,7 @@ header p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 10px;
 }
 .social .mdl-button {
   min-width: 40px;
@@ -336,8 +361,14 @@ header p {
 }
 .social p {
   font-size: 20px;
+  line-height: 25px;
   font-weight: 300;
   margin-bottom: 0;
+}
+@media (max-width: 980px) {
+  .social {
+    padding: 0 10px;
+  }
 }
 /* Button 'Previous page' */
 a.prev {
@@ -420,4 +451,26 @@ footer {
 /* Material lite input */
 .mdl-textfield__input {
   line-height: 1.5;
+}
+/* Mobile version */
+@media (max-width: 720px) {
+  p {
+    font-size: 13px;
+  }
+  .card__title {
+    font-size: 20px;
+  }
+  .test footer {
+    width: calc(100% - 20px);
+  }
+  footer {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 470px) {
+  .card img {
+    position: absolute;
+    bottom: 0;
+  }
 }

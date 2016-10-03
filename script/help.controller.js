@@ -1,4 +1,4 @@
-app.controller('Help', [ '$http', function ($http) {
+angular.module('app').controller('Help', [ '$http', function ($http) {
   var help = this;
   help.helpCenters = [];
 
