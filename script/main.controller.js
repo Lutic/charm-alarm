@@ -1,6 +1,7 @@
 var currentTest, tests = [];
 
-angular.module('app').controller('Main', [ '$http', function ($http) {
+angular.module('app')
+    .controller('Main', [ '$http', function ($http) {
 
   var self = this;
 

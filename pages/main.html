@@ -17,7 +17,7 @@
       <div class="card-container manual-flip" ng-class="{hover: main.isCurrentTest(test.id)}">
         <div class="card mdl-shadow--2dp">
           <div class="front" ng-click="main.testChoice(test.id, 'open')">
-            <img src="{{test.img}}" alt="{{test.title}}">
+            <img ng-src="{{test.img}}" alt="{{test.title}}">
             <div class="card__title">
               <span>{{test.title}}</span>
               <i class="material-icons">navigate_next</i>
