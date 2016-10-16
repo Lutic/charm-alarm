@@ -10,7 +10,7 @@
 
       <div class="result" ng-show="test.isCompleted" ng-bind-html="test.result"></div>
 
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect next" ng-show="test.isSpecialQuestion()"  ng-click="test.testContinue(inputValue)">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect next" ng-show="test.isSpecialQuestion()"  ng-click="test.testContinue(test.age)">
         <i class="material-icons">navigate_next</i>
       </button>
 
@@ -23,9 +23,9 @@
         </button>
 
         <!-- Numeric Textfield -->
-        <form ng-show="test.isSpecialQuestion()" ng-submit="test.testContinue(inputValue)">
+        <form ng-show="test.isSpecialQuestion()" ng-submit="test.testContinue(test.age)">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age" ng-model="inputValue">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age" ng-model="test.age">
             <label class="mdl-textfield__label" for="age">Укажи свой возраст</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>

@@ -7,7 +7,8 @@ angular.module('app').controller('Test',[ '$http', function ($http) {
     self.currentQuestion = 0,
     self.currentZone = "red",
     self.positiveAnswers = 0,
-    self.result = '';
+    self.result = '',
+    self.age = '';
 
   var testUrl = '/data/tests/test.' + self.currentTest + '.json';
 
@@ -70,6 +71,8 @@ angular.module('app').controller('Test',[ '$http', function ($http) {
 
         } else {
           self.isCompleted = true;
+          self.sendDatatoServer();
+          console.log(self.age, self.currentZone);
         }
 
       }
@@ -78,6 +81,18 @@ angular.module('app').controller('Test',[ '$http', function ($http) {
     
   });
 
-  
+
+  self.sendDatatoServer = function () {
+    $http.post({
+      url: 'db_data.php',
+      data: {
+        test_id: currentTest,
+        test_title: currentTestTitle,
+        age: self.age,
+        result_zone: '',
+        location: self.location
+      }
+    });
+  }
 
 }]);

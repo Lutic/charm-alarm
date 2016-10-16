@@ -1,4 +1,4 @@
-var currentTest, tests = [];
+var currentTest, currentTestTitle, tests = [];
 
 angular.module('app')
     .controller('Main', [ '$http', function ($http) {
@@ -16,8 +16,10 @@ angular.module('app')
     } else {
       currentTest = null;
     }
-    console.log(currentTest);
+
     self.isCurrentTest(id);
+    currentTestTitle = currentTest ? self.tests[currentTest].title : '';
+
     return currentTest;
   };
 
